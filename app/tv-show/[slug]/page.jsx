@@ -16,8 +16,6 @@ import {
 } from '../../../lib/api';
 import TvSeriesList from '../../../components/TvSeriesList';
 
-export const runtime = 'edge';
-
 const CATEGORIES = ['popular', 'top_rated', 'on_the_air', 'airing_today'];
 
 // --- HELPER FUNCTIONS ---
