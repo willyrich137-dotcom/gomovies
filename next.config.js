@@ -13,37 +13,14 @@ const nextConfig = {
         hostname: 'placehold.co',
         pathname: '/**',
       },
+      // PERBAIKAN DI SINI:
       {
         protocol: 'https',
-        hostname: 'via.placehold.co',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'live.staticflickr.com',
+        hostname: 'via.placeholder.com',  // ← tempat.com bukan tempat.co
         pathname: '/**',
       }
     ],
-    unoptimized: true,
   },
-  
-  // WAJIB untuk Cloudflare Pages SPA routing
-  trailingSlash: false,
-  
-  // Untuk fix 404 issues
-  skipTrailingSlashRedirect: true,
-  
-  // Experimental untuk Cloudflare
-  experimental: {
-    scrollRestoration: true,
-  },
-  
-  // HAPUS: output: 'export'
 }
 
 module.exports = nextConfig
